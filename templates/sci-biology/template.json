@@ -1,0 +1,51 @@
+{
+  "schema_version": "zcg-template-v1",
+  "template_id": "sci-biology",
+  "kind": "context-stack",
+  "target_role": "domain-policy",
+  "description": "Biological Sciences Knowledge Corpus (Molecular, Cellular, Microbiology, Botany & Ecology)",
+  "recommended_surface_bindings": [
+    {
+      "binding_id": "sci-biology-surface-binding",
+      "description": "Biological Sciences Knowledge Corpus (Molecular, Cellular, Microbiology, Botany & Ecology)",
+      "mode": "authoritative",
+      "target_globs": [
+        "*"
+      ],
+      "architectural_planes": [
+        "*"
+      ],
+      "scopes": [
+        "*"
+      ],
+      "traits": [
+        "*"
+      ],
+      "default_resolution": "L2",
+      "invariants": [
+        "Enforce sci-biology (context-stack) rules and canonical assets"
+      ],
+      "rule_files": [
+        "templates/sci-biology/rules/sci-biology.md"
+      ],
+      "canonical_templates": [
+        "templates/sci-biology/skills/sci-biology-guide/SKILL.md",
+        "templates/sci-biology/assets/canonical_snippet.md"
+      ],
+      "ephemeral_fork_policy": {
+        "bot_role": "sci-biology-guardian",
+        "trigger": "on_surface_match",
+        "model_tier": "inherit",
+        "access_mode": "strictly-read-only",
+        "mount_templates": [
+          "sci-biology"
+        ],
+        "resolution": "L2",
+        "ttl_seconds": 300,
+        "handback_contract": "4-channel-digest+rcap1"
+      }
+    }
+  ],
+  "stack_group": "context-stack",
+  "extends": "scientific-methodology"
+}
