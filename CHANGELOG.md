@@ -1,7 +1,9 @@
-# Changelog — sci-biology
+# Changelog — `sci-biology`
 
-## [Unreleased]
-- Enriched `docs/{architecture,reference,guides}/` with `IUBS` scale & bioenergetic hierarchy (`ATP`, redox, $\Psi_w$, Redfield/terrestrial `C:N:P`), Michaelis-Menten (`[S] = K_m`), Monod washout & thermal preservation (`[35.0 °C, 40.0 °C]`) cut-points, `a_w < 0.60` (`< 10.0% w/w`) microbial stasis & `BSL-1..4` table, lignocellulosic biopolymers, native Iberian substrates vs. `RD 630/2013` invasive exclusions, objective `Summary [E3..E1]` blockquotes, and `Z1..Z4` cockpit surfaces.
+All notable changes to this public epistemic knowledge corpus are documented in this file.
 
-## [1.0.0] - 2026-11-09
-- Initial public-community release of `sci-biology` (Biological Sciences Knowledge Corpus (Molecular, Cellular, Microbiology, Botany & Ecology)) on `ZeroCloudGravity v1.0.0`.
+## [1.0.0] - 2026-11-11
+
+### Added
+- **Initial Public-Community Release (`ZeroCloudGravity v1.0.0`)**: Published `sci-biology` (Biological Sciences Knowledge Corpus (`IUBS`: Biochemistry, Enzyme/Microbial Kinetics, Water Activity Stasis & Iberian Flora)) across `docs/{guides,architecture,reference}/` with `E3..E1` epistemic credibility grades, exact SI/ISO cut-points, and `93%+` `rcap1:L1` deterministic capsule compaction.
+- **Knowledge Stewardship Portal & Full-Open-Source Surface Seal**: Materialized `knowledge-stewardship-portal` (`plugin_shell.html` + `cockpit-shell.js`), RFC 6761 `*.localhost` / `.knowledge.local` zone manifest (`surfaces/infra/dns_zone_manifest.json`), and cryptographic `surfaces/attestation/public_surface_seal.json` (`surface_veracity_mode: full-open-source`).
